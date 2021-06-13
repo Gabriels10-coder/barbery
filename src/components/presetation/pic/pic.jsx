@@ -11,7 +11,7 @@ const useStyles=makeStyles({
     imgStyle:{
         height:'200px',
         borderRadius:'100px',
-        border:'5px solid #ff784e'
+        
 
     }
 

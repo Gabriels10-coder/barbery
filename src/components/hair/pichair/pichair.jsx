@@ -7,8 +7,9 @@ import { makeStyles, Grid } from '@material-ui/core';
 const useStyles = makeStyles({
   styleImg: {
     height: '180px',
+    width:'200px',
     borderRadius: '100px',
-    border: '5px solid black'
+  
 
   },
   range: {

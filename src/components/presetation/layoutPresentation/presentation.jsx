@@ -2,10 +2,16 @@ import React from 'react';
 import Title from '../title/title';
 import Pic from '../pic/pic'
 import Text from '../text/text'
-import { Grid } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
+const useStyles = makeStyles({
+    margin:{
+        marginTop:'300px',
+    }
+})
 const Presentation = () => {
+    const classes =  useStyles();
     return (
-        <div>
+        <div className={classes.margin}>
             <Title />
             <Grid 
             container

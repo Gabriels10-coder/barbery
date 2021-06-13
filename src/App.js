@@ -1,15 +1,26 @@
 import React from 'react';
-import ListHair from './components/hair/layout/layoutHair'
-import Presentation from './components/presetation/layoutPresentation/presentation';
-import Banner from './components/banner/layoutBanner/layoutBanner'  
+import Rota from './components/rotas/rotas'
+import { createMuiTheme,ThemeProvider } from '@material-ui/core';
 import './app.css'
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main:'#000',
+    },
+    secondary: {
+      main: '#696969',
+    },
+  },
+});
 
 const App=() => {
   return (
     <div  className="App">
-      <Banner/>
-     <Presentation/>
-     <ListHair/>
+      <ThemeProvider theme={theme}>
+          <Rota/>
+      </ThemeProvider>
+    
     </div>
   );
 }

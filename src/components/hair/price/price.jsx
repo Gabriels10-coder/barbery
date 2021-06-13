@@ -16,7 +16,7 @@ const Price =(props) =>{
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1,transition:{delay:2}}}>
-            <Typography className={classes.text} variant='caption'>
+            <Typography className={classes.text} variant='caption' color='secondary'>
                 {props.price}
             </Typography>
         </motion.div>

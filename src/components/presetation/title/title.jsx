@@ -17,7 +17,7 @@ const classes = useStyles();
       
           initial={{opacity:0}}
           animate={{opacity:1,transition:{delay:0.5}}}>
-            <Typography align='center' variant='h4'  className={classes.fontColor} >
+            <Typography align='center' variant='h4' color='secondary' className={classes.fontColor} >
                 QUEM SOU EU?
             </Typography>
 

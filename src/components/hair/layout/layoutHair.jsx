@@ -12,7 +12,7 @@ const  ListHair =() =>{
             <motion.div 
             initial={{opacity:0}}
             animate={{opacity:1,transition:{delay:1.2}}}>
-            <Typography variant='h3' align='center'>
+            <Typography variant='h3' align='center' color='secondary'>
                      Cortes de clientes
                  </Typography>
                  </motion.div>
