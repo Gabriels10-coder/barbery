@@ -18,7 +18,7 @@ const Logo =() =>{
 <motion.div>
     <img className={classes.styleImg} alt='logo' src='img/logo.png'/>
 
-
+<h1>ff</h1>
 </motion.div>
     
     )
