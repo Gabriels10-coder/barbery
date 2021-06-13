@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from '../logo/logo'
 import { Typography, Grid, makeStyles } from '@material-ui/core';
-import { urlencoded } from 'body-parser';
-import { BorderBottom } from '@material-ui/icons';
+import {motion} from 'framer-motion';
+
 
 const useStyles = makeStyles({
     text: {
@@ -27,9 +27,13 @@ const Banner = () => {
                     alignItems='center'
                      >
                         <Logo />
+                        <motion.div 
+                        initial={{opacity:0}}
+                        animate={{opacity:1,transition:{delay:1.7}}}>
                     <Typography align='center'  className={classes.text} variant='h2'>
                         Barbearia Jhow
                     </Typography>
+                    </motion.div>
                 </Grid>
             </Grid>
 
