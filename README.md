@@ -1,2 +1,5 @@
 # barbery
-Site em produção para um amigo , 100% didatico
+Site pronto
+comandos para rodar:
+yarn
+yarn start
