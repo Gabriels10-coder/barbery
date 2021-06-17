@@ -1,17 +1,19 @@
+import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import ListHair from '../hair/layout/layoutHair'
-import Presentation from '../presetation/layoutPresentation/presentation';
-import Banner from '../banner/layoutBanner/layoutBanner' 
 import Menu from '../menu/layouMenu/menu'
-import Localização from '../localização/layout/layout';
-const Estrutura = () => {
+
+const useStyles = makeStyles({
+    back:{
+        height:'100%',
+        background:'#000'
+    }
+})
+const Estrutura = (props) => {
+    const classes = useStyles();
     return (
-        <div>
+        <div className={classes.back}>
             <Menu />
-            <Banner />
-            <Presentation />
-            <ListHair />
-            <Localização/>
+           {props.children}
         </div>
 
 

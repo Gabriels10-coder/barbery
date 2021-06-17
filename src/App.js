@@ -17,7 +17,7 @@ const theme = createMuiTheme({
 const App=() => {
   return (
     <div  className="App">
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}> 
           <Rota/>
       </ThemeProvider>
     
